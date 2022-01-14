@@ -181,7 +181,8 @@ moveX=1
 
 while [ "$game_over" -eq 0 ]
 do
-    read -n 1 -s -t 0.1 direction   #change 0.1 to optimal delay time
+    #change 0.1 to optimal delay time
+    read -n 1 -s -t 0.1 direction
     stty -echo
 
     if [ "$direction" = "w" ]
